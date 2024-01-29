@@ -76,7 +76,7 @@ async def main():
                 row.get('Telephone_number', {}).get('phone_1'),
                 row.get('Electronic_address', {}).get('email'),
                 row.get('Electronic_address', {}).get('homepage'),
-                row.get('Postal_address', {}).get('street_address'),
+                row.get('Postal_address', {}).get('street_address').replace(';', ' '),
                 row.get('Postal_address', {}).get('postal_code'),
                 row.get('Postal_address', {}).get('postal_place')
             ]
